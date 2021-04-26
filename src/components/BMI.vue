@@ -4,17 +4,17 @@
       <h2><u>計算 BMI</u></h2>
       <label for="height">
         身高:&nbsp;
-        <input type="text" name="height" v-model.number="height" value="">
+        <input type="text" id="height" v-model.number="height">
         &nbsp;公分
       </label>
       <br><br>
       <label for="weight">
         體重:&nbsp;
-        <input type="text" name="weight" v-model.number="weight" value="">
+        <input type="text" id="weight" v-model.number="weight">
         &nbsp;公斤
       </label>
       <br><br>
-      <button v-on:click.prevent="submit()">Submit</button>
+      <button v-on:click.prevent="submit">Submit</button>
       <p>{{bmi_value}}</p>
     </form>
   </div>
