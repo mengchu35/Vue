@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import BMI from './components/BMI.vue'
+import BMI from './components/practice2.vue'
 
 export default {
   name: 'App',
