@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <BMI msg="BMI"/>
+    <todoList msg="todoList"/>
   </div>
 </template>
 
 <script>
-import BMI from './components/practice2.vue'
+import todoList from './components/practice3.vue'
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 
 export default {
   name: 'App',
   components: {
-    BMI
+    todoList
   }
 }
 </script>
