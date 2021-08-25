@@ -13,7 +13,7 @@
           <td align="left">
             <input type="checkbox" @click="checkTask(item)" :checked="item.check">&nbsp;
             <label v-if="item.check == true" style="text-decoration: line-through;color: #D3D3D3;">{{item.task}}</label>
-            <label v-else>{{item.task}}</label>
+            <input v-else type="text" v-model="item.task">
             <i class="far fa-times-circle" @click="deleteTask(item)"></i>
           </td>
         </tr>
@@ -89,6 +89,16 @@ input:focus{
 table{
   width: 200px;
   margin: 10px auto;
+}
+
+table label {
+  width: 200px;
+}
+
+table input[type="text"] {
+  font-size: 16px;
+  border: 0px;
+  padding: 0px;
 }
 
 td {
